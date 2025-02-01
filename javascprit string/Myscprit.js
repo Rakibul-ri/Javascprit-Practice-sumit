@@ -1,9 +1,14 @@
-let x ='Rakibul islam ';
-let y = 'Rahim';
+const Firends = ['Rakibul', 'Sakibul','Chancal','sagor','sahin', 'mashud']
+let size = Firends.length;
 
-console.log(x === y);
+let d = Firends.toString;
 
-const Care ={Name:"BME", Color:"Red",Country:"German", };
+console.log(Firends[2]);
 
-console.log(Care.Country+Date())
-console.log(x.slice(8,15))
+console.log(size);
+//document.getElementById("demo").innerHTML = Firends.toString();
+console.log(Firends.join(" # ")) ;
+
+const Fruits = ['Apple', 'Banana', 'Orange', 'Mango'];
+
+document.getElementById("demo").innerHTML = Fruits.splice(2,0,"ddd","jjj");
