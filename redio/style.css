@@ -1,0 +1,49 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background: crimson;
+    font-family: sans-serif;
+
+}
+#accodion{
+    margin: 60px auto;
+    width: 600px;
+}
+#accodion li{
+    list-style: none;
+    margin-bottom: 10px;
+    width: 100%;
+    background-color: #ffff;
+    padding: 10px;
+
+}
+#accodion li label{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 500;
+    color: dodgerblue;
+    cursor: pointer;
+}
+#accodion li label span{ 
+    transform: rotate(90deg);
+}
+#accodion label + input[type='radio']{
+display: none;
+}
+#accodion .continer{
+    padding: 0 10px;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.1s;
+}
+#accodion label + input[type='radio']:checked + .continer{
+    max-height: 400px;
+}
